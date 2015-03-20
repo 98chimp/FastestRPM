@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EBA761F21ABBB8B0008FDCFF /* needle2.png in Resources */ = {isa = PBXBuildFile; fileRef = EBA761F11ABBB8B0008FDCFF /* needle2.png */; };
 		EBE898CD1ABB499A0006BFA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE898CC1ABB499A0006BFA8 /* main.m */; };
 		EBE898D01ABB499A0006BFA8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE898CF1ABB499A0006BFA8 /* AppDelegate.m */; };
 		EBE898D31ABB499A0006BFA8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE898D21ABB499A0006BFA8 /* ViewController.m */; };
@@ -14,6 +15,8 @@
 		EBE898D81ABB499A0006BFA8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBE898D71ABB499A0006BFA8 /* Images.xcassets */; };
 		EBE898DB1ABB499A0006BFA8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBE898D91ABB499A0006BFA8 /* LaunchScreen.xib */; };
 		EBE898E71ABB499B0006BFA8 /* FastestRPMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE898E61ABB499B0006BFA8 /* FastestRPMTests.m */; };
+		EBE898F31ABB4C3C0006BFA8 /* speedometer.png in Resources */ = {isa = PBXBuildFile; fileRef = EBE898F11ABB4C3C0006BFA8 /* speedometer.png */; };
+		EBE898F71ABB573A0006BFA8 /* NeedleRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE898F61ABB573A0006BFA8 /* NeedleRotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EBA761F11ABBB8B0008FDCFF /* needle2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = needle2.png; sourceTree = "<group>"; };
 		EBE898C71ABB499A0006BFA8 /* FastestRPM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastestRPM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBE898CB1ABB499A0006BFA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBE898CC1ABB499A0006BFA8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +44,9 @@
 		EBE898E01ABB499B0006BFA8 /* FastestRPMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastestRPMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBE898E51ABB499B0006BFA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBE898E61ABB499B0006BFA8 /* FastestRPMTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FastestRPMTests.m; sourceTree = "<group>"; };
+		EBE898F11ABB4C3C0006BFA8 /* speedometer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speedometer.png; sourceTree = "<group>"; };
+		EBE898F51ABB573A0006BFA8 /* NeedleRotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NeedleRotation.h; sourceTree = "<group>"; };
+		EBE898F61ABB573A0006BFA8 /* NeedleRotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NeedleRotation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +88,13 @@
 		EBE898C91ABB499A0006BFA8 /* FastestRPM */ = {
 			isa = PBXGroup;
 			children = (
+				EBE898F41ABB4C460006BFA8 /* images */,
 				EBE898CE1ABB499A0006BFA8 /* AppDelegate.h */,
 				EBE898CF1ABB499A0006BFA8 /* AppDelegate.m */,
 				EBE898D11ABB499A0006BFA8 /* ViewController.h */,
 				EBE898D21ABB499A0006BFA8 /* ViewController.m */,
+				EBE898F51ABB573A0006BFA8 /* NeedleRotation.h */,
+				EBE898F61ABB573A0006BFA8 /* NeedleRotation.m */,
 				EBE898D41ABB499A0006BFA8 /* Main.storyboard */,
 				EBE898D71ABB499A0006BFA8 /* Images.xcassets */,
 				EBE898D91ABB499A0006BFA8 /* LaunchScreen.xib */,
@@ -117,6 +127,15 @@
 				EBE898E51ABB499B0006BFA8 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EBE898F41ABB4C460006BFA8 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				EBA761F11ABBB8B0008FDCFF /* needle2.png */,
+				EBE898F11ABB4C3C0006BFA8 /* speedometer.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,7 +220,9 @@
 			files = (
 				EBE898D61ABB499A0006BFA8 /* Main.storyboard in Resources */,
 				EBE898DB1ABB499A0006BFA8 /* LaunchScreen.xib in Resources */,
+				EBA761F21ABBB8B0008FDCFF /* needle2.png in Resources */,
 				EBE898D81ABB499A0006BFA8 /* Images.xcassets in Resources */,
+				EBE898F31ABB4C3C0006BFA8 /* speedometer.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBE898F71ABB573A0006BFA8 /* NeedleRotation.m in Sources */,
 				EBE898D31ABB499A0006BFA8 /* ViewController.m in Sources */,
 				EBE898D01ABB499A0006BFA8 /* AppDelegate.m in Sources */,
 				EBE898CD1ABB499A0006BFA8 /* main.m in Sources */,
@@ -414,6 +436,7 @@
 				EBE898EC1ABB499B0006BFA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EBE898ED1ABB499B0006BFA8 /* Build configuration list for PBXNativeTarget "FastestRPMTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +445,7 @@
 				EBE898EF1ABB499B0006BFA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

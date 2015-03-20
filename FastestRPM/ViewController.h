@@ -7,9 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NeedleRotation.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<NeedleRotationDelegate> {
+    CGPoint startLocation;
+}
 
+@property (weak, nonatomic) NeedleRotation *movementModel;
+
+@property (strong, nonatomic) IBOutlet UIImageView *needle;
+@property (strong, nonatomic) IBOutlet UIImageView *speedometer;
+@property (strong, nonatomic) IBOutlet UIPanGestureRecognizer *panGesture;
+@property (strong, nonatomic) NSTimer *timer;
+@property (assign, nonatomic) double startAngle;
 
 @end
 
